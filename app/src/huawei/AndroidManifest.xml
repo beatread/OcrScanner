@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute"
+        tools:node="merge">
+
+        <meta-data
+            android:name="com.huawei.hms.ml.DEPENDENCY"
+            android:value="ocr" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.scan.OcrActivity"
+    android:id="@+id/root_view">
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.app.ocrscanner.view.scan.OcrViewMask
+        android:id="@+id/ocr_detecting_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/offset_32"
+        android:paddingTop="@dimen/recognition_area_margin_top"
+        android:text="@string/place_iban_within_frame"
+        android:textSize="20sp"
+        android:fontFamily="@font/gotham_pro_regular"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_close"
+        android:layout_marginTop="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_baseline_close_24"/>
+
+
+</FrameLayout>

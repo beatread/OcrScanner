@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OcrScanner</string>
+    <string name="place_iban_within_frame">Place the IBAN within the frame</string>
+    <string name="place_edrpou_within_frame">Place EDRPOU within the frame</string>
+</resources>
